@@ -1,14 +1,11 @@
-int main(void)
-{
-    return 42;
-}
+int main();
 
-void _start(void)
+void _start()
 {
     int result = main();
 
     __asm__ volatile(
-        "mov $60, %%rax\n" // syscall: exit
+        "mov $60, %%rax\n"
         "syscall\n"
         :
         : "D"(result));
