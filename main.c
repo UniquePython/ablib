@@ -2,7 +2,7 @@
 
 int main()
 {
-    const char *msg = "Hello from ablib!\n";
-    write(1, msg, 19);
+    const char *msg = "Hello using strlen!\n";
+    write(1, msg, strlen(msg));
     return 0;
 }
