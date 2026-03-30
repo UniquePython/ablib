@@ -2,7 +2,6 @@
 
 int main()
 {
-    const char *msg = "Hello using strlen!\n";
-    write(1, msg, strlen(msg));
+    puts("Hello from puts!");
     return 0;
 }
