@@ -8,5 +8,6 @@ void _start()
         "mov $60, %%rax\n"
         "syscall\n"
         :
-        : "D"(result));
+        : "D"(result)
+        : "rcx", "r11", "memory");
 }

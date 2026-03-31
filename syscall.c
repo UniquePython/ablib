@@ -6,7 +6,8 @@ long write(int fd, const void *buf, unsigned long count)
         "mov $1, %%rax\n"
         "syscall\n"
         : "=a"(ret)
-        : "D"(fd), "S"(buf), "d"(count));
+        : "D"(fd), "S"(buf), "d"(count)
+        : "rcx", "r11", "memory");
 
     return ret;
 }
