@@ -1,5 +1,5 @@
 CC     = gcc
-CFLAGS = -nostdlib -nostartfiles -Wall -Wextra -g -MMD -MP -I include
+CFLAGS = -std=c11 -nostdlib -nostartfiles -Wall -Wextra -g -MMD -MP -I include
 
 SRC_DIR  = src
 RT_DIR   = rt
