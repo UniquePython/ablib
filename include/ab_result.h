@@ -3,6 +3,7 @@
 
 #include "ab_types.h"
 #include "ab_err.h"
+#include "ab_panic.h"
 
 #define DEFINE_RESULT(type)      \
     typedef struct result_##type \

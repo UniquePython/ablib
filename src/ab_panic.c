@@ -2,6 +2,7 @@
 #include "ab_io.h"
 #include "ab_signal.h"
 #include "ab_syscall_nums.h"
+#include "ab_string.h"
 
 __attribute__((noreturn)) void ab_panic(const char *msg)
 {

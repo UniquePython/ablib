@@ -1,6 +1,6 @@
 #include "ab_stdio.h"
-
-#include "ablib.h"
+#include "ab_string.h"
+#include "ab_io.h"
 
 int ab_puts(const char *s)
 {

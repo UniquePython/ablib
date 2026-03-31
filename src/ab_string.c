@@ -1,4 +1,8 @@
-unsigned long ab_strlen(const char *s)
+#include "ab_string.h"
+
+#include "ab_types.h"
+
+size_t ab_strlen(const char *s)
 {
     unsigned long len = 0;
 

@@ -1,3 +1,6 @@
+#ifndef ABLIB_H
+#define ABLIB_H
+
 #include "ab_err.h"
 #include "ab_io.h"
 #include "ab_stdio.h"
@@ -8,3 +11,5 @@
 #include "ab_syscall.h"
 #include "ab_syscall_nums.h"
 #include "ab_types.h"
+
+#endif
