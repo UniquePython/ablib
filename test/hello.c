@@ -2,6 +2,6 @@
 
 int main()
 {
-    puts("Hello from puts!");
+    ab_puts("Hello from puts!");
     return 0;
 }

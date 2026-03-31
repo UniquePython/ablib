@@ -1,4 +1,10 @@
-long write(int fd, const void *buf, unsigned long count);
-unsigned long strlen(const char *s);
-
-int puts(const char *s);
+#include "ab_err.h"
+#include "ab_io.h"
+#include "ab_stdio.h"
+#include "ab_string.h"
+#include "ab_panic.h"
+#include "ab_result.h"
+#include "ab_signal.h"
+#include "ab_syscall.h"
+#include "ab_syscall_nums.h"
+#include "ab_types.h"

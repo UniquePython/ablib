@@ -1,4 +1,4 @@
-unsigned long strlen(const char *s)
+unsigned long ab_strlen(const char *s)
 {
     unsigned long len = 0;
 

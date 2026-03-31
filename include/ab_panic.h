@@ -3,6 +3,6 @@
 
 #include "ab_types.h"
 
-void ab_panic(const char *msg);
+__attribute__((noreturn)) void ab_panic(const char *msg);
 
 #endif

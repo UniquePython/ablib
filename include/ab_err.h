@@ -5,7 +5,7 @@
 
 typedef enum
 {
-    // TODO: Add relevant error codes
+    STUB_ERR
 } AbErr;
 
 #endif

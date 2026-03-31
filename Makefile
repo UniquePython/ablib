@@ -45,21 +45,21 @@ test: all
 	echo "$$PASS passed, $$FAIL failed"
 
 $(BIN_DIR)/%: $(OBJ_DIR)/%.o $(RT_OBJS) $(LIB_OBJS) | $(BIN_DIR)
-	$(CC) $(CFLAGS) -o $@ $(RT_OBJS) $< $(LIB_OBJS)
+	@$(CC) $(CFLAGS) -o $@ $(RT_OBJS) $< $(LIB_OBJS)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $(OBJ_DIR)
-	$(CC) $(CFLAGS) -c -o $@ $<
+	@$(CC) $(CFLAGS) -c -o $@ $<
 
 $(OBJ_DIR)/%.o: $(RT_DIR)/%.c | $(OBJ_DIR)
-	$(CC) $(CFLAGS) -c -o $@ $<
+	@$(CC) $(CFLAGS) -c -o $@ $<
 
 $(OBJ_DIR)/%.o: $(TEST_DIR)/%.c | $(OBJ_DIR)
-	$(CC) $(CFLAGS) -c -o $@ $<
+	@$(CC) $(CFLAGS) -c -o $@ $<
 
 $(OBJ_DIR) $(BIN_DIR):
-	mkdir -p $@
+	@mkdir -p $@
 
 clean:
-	rm -rf $(OBJ_DIR) $(BIN_DIR)
+	@rm -rf $(OBJ_DIR) $(BIN_DIR)
 
 -include $(DEPS)
